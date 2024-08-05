@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        
+        <!--==Title===========-->
+        <title>Colorado Grocery Store</title>
+    
+        <!--==Stylesheet=========-->
+        <link rel="stylesheet" type="text/css" href="styles.css">    
+    
+        <!--==CO-icon===========-->
+        <link rel="shortcut icon" href="Flag_of_Colorado (1).svg"/>
+    
+        <!--==Using-Font-Awesome====================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+        <!--==Import-Font-Family================-->
+    
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navigation">
+                
+            <!---logo-->
+            <a href="index.html"  class="logo"> 
+                <img src="Flag_of_Colorado (1).svg" alt="Flag Of Colorado" class="hello">
+                <h3><i><span>Colorado</span></i> Grocery Store</h3>
+    
+            <!--menu------>
+            <nav class="navigation">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="fruits.html">Fruits</a>
+                    <br>
+                    <a href="vegetables.html">Vegetables</a>
+                    <br>
+                    <a href="dairy produce.html">Dairy Produce</a>
+                    <br>
+                    <a href="meat and seafood.html">Meat and Seafood</a>
+                    <br>
+                    <a href="baking and cooking ingredients.html">Baking and Cooking Ingredients</a>
+                </div>
+                </li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="loyalty registration.html">Loyalty Registration</a></li>
+                </ul>
+            </ul>
+            </nav>
+    
+            <!--right-nav-(cart-like)-->
+            <div class="right-nav">
+    
+                <!--like----->
+                <a href="#" class="like">
+                    <i class="fa fa-heart-o"></i>
+                    <span>0</span>
+                </a>
+    
+                <!--cart----->
+                <a href="#" class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>0</span>
+                </a>
+    
+            </div>
+            
+        </nav>
+        </header>
+        
+        <!--nav-end-------------->
+    
+         <!--Search-box-->
+         <form action="" class="search-box">
+            <!--icon-->
+            <i class="fa fa-search" style="font-size:24px"></i>
+            <!--input-->
+            <input type="text" class="search-input" placeholder="Search Colorado" name="search">
+            </form>
+
+            <br>
+
+    <h1>Checkout</h1>
+
+    <br>
+
+    <div class="centered-form-container">
+        <form action="checkout.html" method="POST" class="centered-form">  
+        
+            <div>
+                <label for="FName">First Name:</label>
+                <input type="text" id="FName" name="FName" placeholder="Enter first name" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="LName">Last Name:</label>
+                <input type="text" id="LName" name="LName" placeholder="Enter last name" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="text" id="mobileNumber" name="MobileNumber" maxlength="10" placeholder="07XXXXXXXX" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" maxlength="12" required>
+            </div>
+
+            <br>
+            <br>
+
+            <img src="images/Card Payment.jpeg" alt="Card Payment">
+
+            <div>
+                <label for="Payment">Payment Method:</label>
+                <br>
+                <input type="radio" id="cash" name="paymentMethod" value="Cash">
+                <label for="cash">Cash on Delivery</label>
+                <br>
+                <input type="radio" id="card" name="paymentMethod" value="Card">
+                <label for="card">Card Payment (Debit Card/ Credit Card)</label>
+            </div>
+
+            <br>
+
+            <p><h4>If the Payment Method is <span style="color:#ffff00">Cash on Delivery</span> then please fill the card details with random numbers</h4></p>
+
+            <br>
+
+            <div>
+                <label for="expiry">Expiry Date of card:</label>
+                <input type="date" id="expiry" name="expiry">
+            </div>
+
+            <div>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="CardNumber" placeholder="12345678XXXXXXXX" minlength="16" maxlength="16" required>
+            </div>
+
+            <div>
+                <label for="cvv">CVV (Card Verification Value):</label>
+                <input type="text" id="cvv" name="CVV" minlength="3" maxlength="4" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="Address" name="address" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="City">City:</label>
+                <input type="text" id="City" name="City" placeholder="Enter your city" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="County">County:</label>
+                <input type="text" id="County" name="County" placeholder="Enter your county" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="State">State:</label>
+                <input type="text" id="State" name="State" placeholder="Enter your state" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="ZIPCode">ZIP Code:</label>   
+                <input type="text" id="ZIPCode" name="ZIPCode" placeholder="Enter ZIP Code" maxlength="5" required>
+            </div>
+
+            <br>
+
+            <button type="reset" id="reset">Reset</button>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<br>
+<br>
+<br>
+
+<footer>
+    <br>
+    <br>
+    <h2>Get to Know Us</h2>
+    <br>
+    <p>
+        Colorado Grocery Store<br>
+        No:3479, Denver, Denver County, Colorado, USA<br>
+        Mobile: +94 70 1503871<br>
+        info@coloradogrocerystore.com
+    </p>   
+    <br>
+    <br> 
+</footer>
+
+</html>

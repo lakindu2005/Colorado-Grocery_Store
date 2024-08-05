@@ -1,0 +1,978 @@
+*{
+    font: poppins;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*getting rid of the dots*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 102, 255);
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 3;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+body{
+    background-color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+p{
+    line-height: 1.5;
+}
+
+/*==Navigation==========================*/
+.navigation{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+}
+
+.menu{
+    display:flex;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.menu li a{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 11px;
+    margin: 0px 11px;
+    color: #00FFFF;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+    display: block;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: #FF0000;
+    white-space: nowrap; /* Prevent line breaks */
+}
+.logo span{
+    color: #ffff00;    
+}
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.right-nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+.right-nav a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+.right-nav .like{
+    background-color: #000080;
+    color: #ffffff;
+}
+.right-nav .cart{
+    background-color: #000080;
+    color: #ffffff; 
+}
+.right-nav a span{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 0.6rem;
+    font-weight: 500;
+    background-color: #000000;
+} 
+.menu li a:hover{
+    color: #FFFFFF;
+    transition: all ease 0.3s;
+}
+
+.search-box{
+    background-color: #ffff00;
+    color:#000000;
+    height: 80px;
+    width: 1349px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 30
+}
+.search-box .search-input{
+    height: 40px;
+    width:fit-content;
+    border: none;
+    width: 100%;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction:column;
+      justify-content: space-evenly;
+
+    }
+  }
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+}
+
+/* Centered text */
+.text-block {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 590px;
+    height: 160px;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 600px) {
+    .text-block {
+        font-size: 9.5px; /* Adjust font size for better readability on smaller screens */
+        padding: 9px; /* Space between text and all borders */
+        max-width: 93%; /* Ensure the text block doesn't overflow the container */
+        top: 33.7%;
+        left: 46.85%;
+        transform: translate(-50%, -55%);
+    }
+}
+/* Responsive design for transparent text on image ends*/
+
+.products-heading h2{
+    font-size: 2.25rem;
+    font-weight: 500;
+    color:#000000;
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  .container .content {
+    position: absolute; /* Position the background text */
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    text-align: left;
+    line-height: 1.5; /*line spacing to 1.5 */
+    width: 200%; 
+    padding: 20px; 
+  }
+
+/*5 product page links in the home page starts here*/
+body {
+    color: #ffffff;
+    background: #000000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: black;
+    width: 235px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card-image {
+    height: 180px;
+    width: 235px;
+    margin-bottom: 15px;
+    background-size: contain;  /* Make the image fit inside without cropping */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    border-radius: 15px 15px 0 0;
+}
+
+.dairy-products{
+    background-image: url(dairy.jpg)
+}
+
+.vegetables{
+    background-image: url(vegetables.webp)
+}
+
+.fruits{
+    background-image: url(fruits.jpg)
+}
+
+.meat-and-seafood{
+    background-image: url(Meat-and-Seafood.jpg)
+}
+
+.baking-and-cooking-ingredients{
+    background-image: url(baking-and-cooking-ingredients.png)
+}
+
+.offers ul {
+    list-style-type: disc; /* Use bullet points for the list */
+    padding-left: 70px; /* Add left padding to the list */
+    margin-top: 10px; /* Add margin on top of the list */
+    margin-bottom: 27.5px; /* Add margin on top of the list */
+    text-align: left;
+    
+}
+
+.offers li {
+    padding: 5px 0; /* Padding between list items */ 
+}
+
+.card h2 {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card p{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card a{
+    background-color:#000000;
+    color:#ffffff;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card:hover {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content th,
+.content td {
+  padding: 8px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add border to cells */
+}
+
+.content th {
+    text-align: center;
+}
+/*5 product page links in the home page ends*/
+
+
+
+/*About Us mobile responsive*/
+@media (max-width: 768px) {
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .flex-container div {
+        margin: 10px;
+    }
+
+    .flex-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        width: 100%;
+        overflow-x:auto;
+    }
+
+    table td {
+        padding: 10px;
+        vertical-align: top; /* Align content to the top */
+    }
+
+    .content iframe, .content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .content table {
+        display: block; /* Change the display of tables to block */
+    }
+
+    .content table th{
+        font-size: 10px;
+    }
+
+    .content table tr {
+        display: block; /* Change the display of table rows to block */
+        margin-bottom: 20px; /* Add some space between table rows */
+    }
+
+    .content table tr td {
+        display: block; /* Change the display of table cells to block */
+    }
+}
+/*About Us mobile responsive ends*/
+
+/*About Us services table*/
+/* Wrapper for centering the table */
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Default styles */
+.services table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.services th,
+.services td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.services th {
+    background-color: #000080;
+}
+
+.services tfoot td {
+    background-color: #000080;
+    font-style: italic;
+}
+
+/* Media query for screens smaller than 768px */
+/* Mobile styles */
+@media (max-width: 600px) {
+    .services table, 
+    .services thead, 
+    .services tbody, 
+    .services th, 
+    .services td, 
+    .services tr { 
+        display: block; 
+        width: 100%;
+    }
+    
+    .services thead tr { 
+        display: none; 
+    }
+    
+    .services tr { 
+        margin-bottom: 15px;
+    }
+    
+    .services td { 
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    
+    .services td:before { 
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+/*About Us services table ends here*/
+
+
+/*Styling for all product pages starts here*/
+.venue {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Styling for each venue */
+.venue {
+    width: 260px;
+    margin: 30px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Styling for venue images */
+.venue img {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+/* Styling for venue titles */
+.venue h2 {
+    margin-top: 10px; /* Add margin to separate title from image */
+    font-size: 18px; /* Set font size for the venue title */
+}
+
+/* Styling for venue prices */
+.venue h4 {
+    margin-top: 10px; /* Add margin to separate price from title */
+    font-size: 16px; /* Set font size for the venue price */
+}
+/*Styling for all product pages ends here*/
+
+/* Styling for cosmetics products (page removed)*/
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table td {
+    width: 33.33%; /* Divide equally for three columns */
+    padding: 30px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.item h4 {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .products-table, .products-table tr, .products-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .products-table {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the table in mobile view */
+    }
+
+    .products-table td {
+        margin-bottom: 20px;
+    }
+
+    .item {
+        width: 100%; /* Adjust the width for better appearance on mobile */
+    }
+}
+/*Cosmetics Products page ends here (page removed)*/
+
+
+
+  /* Link to the order page */
+.order-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+form{
+background:#4d4d4d;
+width: 500px;
+text-align: left;
+padding: 3%;
+}
+
+
+/*Home page ends*/
+
+/*Loyalty Registration page*/
+/*box with pictures and content inside*/
+
+label{
+    width: 600px;
+    text-align:left;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content{
+    width:1250px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 1200px) {
+    .content {
+        width: 90%; /* Reduce width to 90% of the viewport width for smaller screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        width: 100%; /* Make the width 100% for even smaller screens */
+        padding: 0 20px; /* Add some padding for better spacing */
+    }
+}
+
+/*styling buttons for product items on product pages*/
+.myButton{
+    background-color: #007bff;;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-bloock;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration:0.4s;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.myButton:hover{
+    background-color: #0056b3;
+    transition: all 0.3s ease;
+}
+
+/* Remove default styling from the anchor tag and make it a block */
+.button-link {
+    text-decoration: none;
+    display: inline-block;
+}
+/*Button styling for product pages ends*/
+
+
+
+header, footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(0, 102, 255);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        padding: 5px; /* Reduce padding for smaller screens */
+        font-size: 14px; /* Adjust font size for better readability on mobile */
+    }
+
+    header h3 {
+        font-size: 18px;
+    }
+}
+
+/*About Us-table for services*/
+/* Apply basic styles to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Apply styles to table header */
+  th {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Apply styles to table data cells */
+  td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+
+  /* Apply styles to table footer data cell */
+  tfoot td {
+    padding: 8px;
+    text-align: center;
+  }
+
+  h1{
+    text-align: center;
+}
+
+content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Media query for screens smaller than 800px */
+@media (max-width: 800px) {
+    .navigation {
+        flex-direction: column; /* Change navigation direction to column */
+        align-items: stretch; /* Stretch items to full width */
+    }
+    
+    .menu {
+        flex-direction: column; /* Stack menu items vertically */
+    }
+    
+    .menu li {
+        margin: 5px 0; /* Adjust margin between menu items */
+    }
+    
+    .menu li a {
+        padding: 10px; /* Adjust padding for better touch interaction */
+    }
+    
+    .right-nav {
+        grid-template-columns: 1fr; /* Change right nav items to stack vertically */
+    }
+    
+    .search-box {
+        width: 100%; /* Make search box full width */
+    }
+    
+    .flex-container {
+        flex-direction: column; /* Adjust flex container direction */
+    }
+    
+    .container {
+        width: 100%;  /* Make container full width */
+    }
+    
+    .text-block {
+        width:fit-content;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .container .content{
+        width: 100%
+    }
+    
+    .centered{
+        width: 100%;
+    }
+    
+    .venue{
+        width: 100%;
+    }
+
+    .venue img {
+        width: 100%;
+        height: 150px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0px;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    .product img {
+        width: 100%;
+        height: 150px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0px;
+    }
+
+    .item{
+        width: 100%;
+    }
+
+    .item img {
+        width: 100%;
+        height: 150px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0px;
+    }
+
+    .myButton {
+        padding: 10px 20px; /* Further adjusted padding for smaller screens */
+        font-size: 17px; /* Further adjusted font size for smaller screens */
+        margin: 3px 0; /* Further adjusted margin for better spacing */
+    }
+
+    #productTable,
+  #productTable tbody,
+  #productTable tr,
+  #productTable td {
+    display: block;
+    width: 100%;
+  }
+    
+    /* Container holding the image and the text */
+    .container {
+        width: 100%;
+    }
+
+    .text-block {
+        width: 100%;
+}
+
+/*Order Page*/
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+
+button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition-duration:0.125s;
+    cursor: pointer;
+}
+
+
+.order-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.order-item {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.order-item h2 {
+    margin-top: 0;
+}
+
+label, p {
+    margin: 10px 0 5px;
+}
+
+.remove-btn {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 0px; /* Set to match height for centering */
+    border: none;
+    font-size: 25px; /* Adjust font size */
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
+
+
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*Checkout Page*/
+.centered-form {
+    background: #ffffff54;
+    padding: 20px;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.centered-form-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-form img{
+    width: 400px;
+}
+
+.centered-form div {
+    margin-bottom: 15px;
+}
+
+.centered-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.centered-form textarea {
+    width: 710px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.centered-form button {
+    background-color: #008cff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.centered-form button[type="reset"]{
+    background-color: #f44336;
+    margin-right: 10px;
+}
+
+.content-form button[type="reset"]{
+    background-color: #f44336;
+    margin-right: 10px;
+}
+
+.centered-form button:hover {
+    opacity: 0.8;
+}
+
+.centered-form img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .centered-form {
+        padding: 15px;
+    }
+
+    .centered-form textarea {
+        width: 360px;
+    }
+}

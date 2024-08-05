@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        
+        <!--==Title===========-->
+        <title>Colorado Grocery Store</title>
+    
+        <!--==Stylesheet=========-->
+        <link rel="stylesheet" type="text/css" href="styles.css">    
+    
+        <!--==CO-icon===========-->
+        <link rel="shortcut icon" href="Flag_of_Colorado (1).svg"/>
+    
+        <!--==Using-Font-Awesome====================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+        <!--==Import-Font-Family================-->
+    
+    </head>
+    
+    <body>
+        <header>
+            <nav class="navigation">
+                
+            <!---logo-->
+            <a href="index.html"  class="logo"> 
+                <img src="Flag_of_Colorado (1).svg" alt="Flag Of Colorado" class="hello">
+                <h3><i><span>Colorado</span></i> Grocery Store</h3>
+    
+            <!--menu------>
+            <nav class="navigation">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li class="dropdown">
+                <a href="#">Products</a>
+                <div class="dropdown-content">
+                    <a href="fruits.html">Fruits</a>
+                    <br>
+                    <a href="vegetables.html">Vegetables</a>
+                    <br>
+                    <a href="dairy produce.html">Dairy Produce</a>
+                    <br>
+                    <a href="meat and seafood.html">Meat and Seafood</a>
+                    <br>
+                    <a href="baking and cooking ingredients.html">Baking and Cooking Ingredients</a>
+                </div>
+                </li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="loyalty registration.html">Loyalty Registration</a></li>
+                </ul>
+            </ul>
+            </nav>
+    
+            <!--right-nav-(cart-like)-->
+            <div class="right-nav">
+    
+                <!--like----->
+                <a href="#" class="like">
+                    <i class="fa fa-heart-o"></i>
+                    <span>0</span>
+                </a>
+    
+                <!--cart----->
+                <a href="#" class="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>0</span>
+                </a>
+    
+            </div>
+            
+        </nav>
+        </header>
+        
+        <!--nav-end-------------->
+    
+         <!--Search-box-->
+         <form action="" class="search-box">
+            <!--icon-->
+            <i class="fa fa-search" style="font-size:24px"></i>
+            <!--input-->
+            <input type="text" class="search-input" placeholder="Search Colorado" name="search">
+            </form>
+
+            <br>
+            <br>
+            
+            <div class="content">
+            <h1>Order your products</h1>
+
+            <br>
+            
+    <main>
+        <section>
+            <div class="container">
+                <div class="order-list">
+                    <div class="order-item">
+                        <h2>Fruits</h2>
+                        <label for="fruits-name">Product Name:</label>
+                        <select id="fruits-name">
+                            <option value="Apples">Apples</option>
+                            <option value="Bananas">Bananas</option>
+                            <option value="Grapes">Grapes</option>
+                            <option value="Strawberries">Strawberries</option>
+                            <option value="Pineapple">Pineapple</option>
+                            <option value="Cherries">Cheries</option>
+                        </select>
+                        <label for="fruits-kg">Kgs:</label>
+                        <input type="number" id="fruits-kg" min="0">
+                        <br>
+                        <br>
+                        Price: $<span id="fruits-price">0.00</span>
+                        <br>
+                        <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="order-item">
+                        <h2>Vegetables</h2>
+                        <label for="vegetables-name">Product Name:</label>
+                        <select id="vegetables-name">
+                            <option value="Brinjal">Brinjal</option>
+                            <option value="Carrot">Carrot</option>
+                            <option value="Broccoli">Broccoli</option>
+                            <option value="Potato">Potato</option>
+                            <option value="Snake Gourd">Snake Gourd</option>
+                            <option value="Spinach">Spinach</option>
+                        </select>
+                        <label for="vegetables-kg">Kgs:</label>
+                        <input type="number" id="vegetables-kg" min="0">
+                        <br>
+                        <br>
+                        Price: $<span id="vegetables-price">0.00</span>
+                        <br>
+                        <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="order-item">
+                        <h2>Dairy Produce</h2>
+                        <label for="dairy-name">Product Name:</label>
+                        <select id="dairy-name">
+                            <option value="Kotmale Strawberry Yoghurt Drink">Kotmale Strawberry Yoghurt Drink</option>
+                            <option value="Highland Vanilla Yoghurt">Highland Vanilla Yoghurt</option>
+                            <option value="Ambewela Fresh Drink">Ambewela Fresh Drink</option>
+                            <option value="Kraft Cheddar Cheese">Kraft Cheddar Cheese</option>
+                            <option value="Anchor Newdale Chocolate Flavoured Drink">Anchor Newdale Chocolate Flavoured Drink</option>
+                            <option value="Elephant House Chocolate ice-cream 2L">Elephant House Chocolate ice-cream 2L</option>
+                        </select>
+                        <label for="dairy-quantity">Quantity:</label>
+                        <input type="number" id="dairy-quantity" min="0">
+                        <br>
+                        <br>
+                        Price: $<span id="dairy-price">0.00</span>
+                        <br>
+                        <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="order-item">
+                        <h2>Meat and Seafood</h2>
+                        <label for="meat-name">Product Name:</label>
+                        <select id="meat-name">
+                            <option value="Chicken" data-price="6.51">Chicken</option>
+                            <option value="Mutton">Mutton</option>
+                            <option value="Beef">Beef</option>
+                            <option value="Pork">Pork</option>
+                            <option value="Salmon">Salmon</option>
+                            <option value="Tuna">Tuna</option>
+                        </select>
+                        <label for="meat-kg">Kgs:</label>
+                        <input type="number" id="meat-kg" min="0">
+                        <br>
+                        <br>
+                        Price: $<span id="meat-price">0.00</span>
+                        <br>
+                        <br>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="order-item">
+                        <h2>Baking and Cooking Ingredients</h2>
+                        <label for="baking-name">Product Name:</label>
+                        <select id="baking-name">
+                            <option value="Sugar">Sugar</option>
+                            <option value="Salt">Salt</option>
+                            <option value="Rice">Rice</option>
+                            <option value="Pasta">Pasta</option>
+                            <option value="Flour">Flour</option>
+                            <option value="Cashew">Cashew</option>
+                        </select>
+                        <label for="baking-quantity">Quantity:</label>
+                        <input type="number" id="baking-quantity" min="0">
+                        <br>
+                        <br>
+                        Price: $<span id="baking-price">0.00</span>
+                        <br>
+                        <br>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br>
+    <br>
+
+    <h2>Bill</h2>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cart items will be added here once add to cart is tapped -->
+                </tbody>
+            </table>
+
+            <br>
+            <br>
+
+            <main>
+                <section>
+                    <div class="container">
+                        <div class="order-list">
+                            <!-- Your existing order items here -->
+                        </div>
+                        <br>
+                        <button id="reset">Reset cart</button>
+                        <button id="addtofavorites">Add to Favourites</button>
+                        <br>
+                        <button id="applyfavourites">Apply Favourites</button>
+                        <a href="checkout.html"><button id="myButton">Pay</button></a>
+                    </div>
+                </section>
+            </main>
+    
+        <br>
+
+        <script src="script.js"></script>
+    </body>
+
+<br>
+<br>
+<br>
+
+<footer>
+        <br>
+        <br>
+        <h2>Get to Know Us</h2>
+        <br>
+        <p>
+            Colorado Grocery Store<br>
+            No:3479, Denver, Denver County, Colorado, USA<br>
+            Mobile: +94 70 1503871<br>
+            info@coloradogrocerystore.com
+        </p>   
+        <br>
+        <br> 
+</footer>
+
+</html>
