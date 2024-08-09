@@ -1,5 +1,4 @@
 *{
-    font: poppins;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -143,7 +142,7 @@ p{
     align-items: center;
     margin-top: 0px;
     padding: 0px 20px 0px 20px;
-    border-radius: 30
+    border-radius: 30px
 }
 .search-box .search-input{
     height: 40px;
@@ -620,7 +619,7 @@ label{
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-bloock;
+    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     transition-duration:0.4s;
